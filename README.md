@@ -111,7 +111,7 @@ videolu işlemlerin stellar explorer da görüldüğü video
 
 
 <img width="736" height="478" alt="download (8)" src="https://github.com/user-attachments/assets/c1464017-a5a6-4ecb-8a2e-ee57218ad3fd" />
-
+front endim yok
 
 
 
