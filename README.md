@@ -80,3 +80,10 @@ Uses Soroban Token Interface for transfers
 ✔️ Cooldown protection
 ✔️ Authorization (require_auth)
 ✔️ Storage cleanup
+
+
+test sonuçları 
+<img width="1458" height="197" alt="image" src="https://github.com/user-attachments/assets/6c69ba7d-2977-4f19-8cf6-8b6c765670d7" />
+İşlem Tipi: Kasa Açma (Reveal)
+Durum: Başarılı (Success)
+
