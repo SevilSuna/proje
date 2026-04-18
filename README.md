@@ -82,9 +82,8 @@ Uses Soroban Token Interface for transfers
 ✔️ Storage cleanup
 
 
-test sonuçları 
-<img width="1458" height="197" alt="image" src="https://github.com/user-attachments/assets/6c69ba7d-2977-4f19-8cf6-8b6c765670d7" />
-İşlem Tipi: Kasa Açma (Reveal)
+test 
+
 Durum: Başarılı (Success)
 <img width="1476" height="619" alt="Ekran görüntüsü 2026-04-18 171246" src="https://github.com/user-attachments/assets/5ff755f7-2768-4e5d-b5c9-3b6f07be1047" />
 
