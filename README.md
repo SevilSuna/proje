@@ -89,7 +89,7 @@ Durum: Başarılı (Success)
 📸 Test Aşaması Çıktısı:
 Yukarıdaki ekran görüntüsünde, akıllı sözleşmenin üç ana fonksiyonunun (Commit -> Reveal -> Balance) Standalone ağındaki başarılı çalışma döngüsü görülmektedir. İşlem hash değerleri (Transaction Hash) üzerinden ağdaki doğrulama teyit edilebilir.
 1. örnek: commit (mühürleme) işleminin hashi= 736ee086ed10d464151c4c180d56b14e7c3c6ef2303cfadc9e7199ebbdb67657
-2. Örnek: Kasa Açma İşleminin Hash'i= b9f8158ee684699204ece902580addfde2918692322a8789f72e5740129559a1
+2. Örnek: Kasa Açma İşleminin Hash'i(reveal)= b9f8158ee684699204ece902580addfde2918692322a8789f72e5740129559a1
 
 
 
