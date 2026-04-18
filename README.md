@@ -84,16 +84,18 @@ Uses Soroban Token Interface for transfers
 
 test 
 
+docker:
+<img width="1603" height="897" alt="image" src="https://github.com/user-attachments/assets/be125f85-2ecf-44d1-b391-e4ded84d320e" />
 Durum: Başarılı (Success)
+
+
+
+
 <img width="1471" height="583" alt="image" src="https://github.com/user-attachments/assets/c151f056-f4e4-44d1-80fc-1df5ad5fa937" />
 📸 Test Aşaması Çıktısı:
 Yukarıdaki ekran görüntüsünde, İşlem hash değerleri (Transaction Hash) üzerinden ağdaki doğrulama teyit edilebilir.
 <img width="1857" height="840" alt="image" src="https://github.com/user-attachments/assets/35d5dd6c-7d5b-4f4f-b31f-27582c8aed58" />
 
-
-
-docker:
-<img width="1603" height="897" alt="image" src="https://github.com/user-attachments/assets/be125f85-2ecf-44d1-b391-e4ded84d320e" />
 
 
 
