@@ -1,8 +1,8 @@
-🚀 Soroban CS2 Case Opening System
-🇹🇷 Proje Özıklaması (Turkish)
+#🚀 Soroban CS2 Case Opening System
+
 Bu proje, Stellar ağının Soroban akıllı sözleşme platformu üzerinde geliştirilmiş, CS2 tarzı bir "Kasa Açma" mekanizmasıdır. Siber güvenlik prensipleri gözetilerek Commit-Reveal protokolü ile tasarlanmıştır. Bu sayede blok zinciri üzerindeki şeffaflıktan kaynaklanabilecek rastgelelik manipülasyonlarının önüne geçilmiştir.
 
-Özellikler:
+#Özellikler:
 
 Güvenli Rastgelelik: Commit-Reveal şeması ile oyuncuların sonucu önceden tahmin etmesi engellenir.
 
@@ -12,10 +12,10 @@ Token Entegrasyonu: Başarılı kasa açılışlarında oyunculara otomatik olar
 
 Kalıcı Veri (Persistent Storage): Oyuncu verileri ve mühürler zincir üzerinde güvenli bir şekilde saklanır.
 
-🇺🇸 Project Description (English)
+
 This project is a CS2-style "Case Opening" system developed on the Soroban smart contract platform of the Stellar network. It utilizes the Commit-Reveal protocol to ensure fairness and prevent randomness manipulation often found in transparent blockchain environments.
 
-Features:
+#Features:
 
 Secure Randomness: Uses a Commit-Reveal scheme to ensure players cannot predict or manipulate the outcome.
 
