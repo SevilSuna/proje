@@ -1,43 +1,82 @@
-🚀 Soroban CS2 Case Opening System
+🎮 CS2Kasasi Smart Contract
+🇹🇷 Türkçe
+📌 Proje Hakkında
 
-Bu proje, Stellar ağının Soroban akıllı sözleşme platformu üzerinde geliştirilmiş, CS2 tarzı bir "Kasa Açma" mekanizmasıdır. Siber güvenlik prensipleri gözetilerek Commit-Reveal protokolü ile tasarlanmıştır. Bu sayede blok zinciri üzerindeki şeffaflıktan kaynaklanabilecek rastgelelik manipülasyonlarının önüne geçilmiştir.
+CS2Kasasi, Soroban üzerinde yazılmış bir akıllı kontrattır. Commit-reveal mekanizması kullanarak adil bir “kasa açma” (loot box) sistemi sağlar.
 
-Özellikler:
+Oyuncular önce bir “commit” (mühür) gönderir, ardından secret değeri ile kasayı açarak ödül kazanma şansı elde eder.
 
-Güvenli Rastgelelik: Commit-Reveal şeması ile oyuncuların sonucu önceden tahmin etmesi engellenir.
+⚙️ Nasıl Çalışır?
+1. Commit (Mühürleme)
 
-Cooldown Mekanizması: Spam ve DoS saldırılarını önlemek için 10 saniyelik işlem sınırı uygulanmıştır.
+Oyuncu, bir commit_hash gönderir:
 
-Token Entegrasyonu: Başarılı kasa açılışlarında oyunculara otomatik olarak XLM ödülü transfer edilir.
+commit(env, oyuncu, commit_hash)
+commit_hash = secret ^ 0xABCDEF
+Bu işlem oyuncunun gelecekteki hamlesini gizler.
+2. Kasa Açma
 
-Kalıcı Veri (Persistent Storage): Oyuncu verileri ve mühürler zincir üzerinde güvenli bir şekilde saklanır.
+Oyuncu kasayı açmak için:
 
+kasa_ac(env, oyuncu, token_adresi, secret)
 
-This project is a CS2-style "Case Opening" system developed on the Soroban smart contract platform of the Stellar network. It utilizes the Commit-Reveal protocol to ensure fairness and prevent randomness manipulation often found in transparent blockchain environments.
+Kontrat şu kontrolleri yapar:
 
-Features:
+✅ Cooldown kontrolü (5 saniye)
+✅ Commit doğrulaması
+✅ Secret doğrulaması
 
-Secure Randomness: Uses a Commit-Reveal scheme to ensure players cannot predict or manipulate the outcome.
+🎲 Rastgelelik (Randomness)
 
-Cooldown Mechanism: A 10-second cooldown is enforced to prevent spamming and automated DoS attempts.
+Rastgelelik şu şekilde hesaplanır:
 
-Token Integration: Automatically transfers XLM rewards to the player upon successful "red" drops.
+random_seed = now ^ secret
+sans = random_seed % 100
+sans > 50 → Oyuncu kazanır 🎉
+sans <= 50 → Kaybeder 😢
+💰 Ödül Sistemi
+Kazanan oyuncuya 50 token gönderilir
+Token transferi için Soroban Token Interface kullanılır
+🔐 Güvenlik Özellikleri
+✔️ Commit-Reveal mekanizması
+✔️ Cooldown koruması
+✔️ Yetkilendirme (require_auth)
+✔️ Storage temizleme (commit silinir)
 
-Persistent Storage: Player states and commitments are securely stored on-chain.
+🇬🇧 English
+📌 About the Project
 
-🛠 Teknik Detaylar / Technical Details
-Language: Rust
+CS2Kasasi is a smart contract built on Soroban. It implements a fair loot-box system using a commit-reveal scheme.
 
-SDK: Soroban SDK v22.0.1
+Players first submit a commitment, then reveal a secret to open the case and try their luck.
 
-Tools: Stellar CLI, Docker (Standalone Network)
+⚙️ How It Works
+1. Commit Phase
 
-🚀 Çalıştırma / How to Run
-Bash
-# Projeyi derle / Build the project
-stellar contract build
+The player submits a hash:
 
-# Sözleşmeyi deploy et / Deploy the contract
-stellar contract deploy --wasm target/wasm32v1-none/release/hello_world.wasm --source SunaCuzdan --network-passphrase "Standalone Network ; February 2017" --rpc-url http://localhost:8000/soroban/rpc
-🔐 Siber Güvenlik Notu / Cybersecurity Note
-Bu proje, blok zinciri tabanlı oyunlarda karşılaşılan yaygın güvenlik açıklarını (malleability, front-running) Commit-Reveal katmanı ile minimize etmeyi amaçlayan bir akademik çalışmadır.
+commit(env, oyuncu, commit_hash)
+commit_hash = secret ^ 0xABCDEF
+This hides the player's move until reveal.
+2. Open Case
+kasa_ac(env, oyuncu, token_adresi, secret)
+
+The contract checks:
+
+✅ Cooldown (5 seconds)
+✅ Stored commit exists
+✅ Secret matches commit
+
+🎲 Randomness
+random_seed = now ^ secret
+chance = random_seed % 100
+chance > 50 → Win 🎉
+chance <= 50 → Lose 😢
+💰 Reward System
+Winners receive 50 tokens
+Uses Soroban Token Interface for transfers
+🔐 Security Features
+✔️ Commit-Reveal scheme
+✔️ Cooldown protection
+✔️ Authorization (require_auth)
+✔️ Storage cleanup
