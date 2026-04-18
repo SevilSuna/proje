@@ -104,6 +104,7 @@ videolu işlemlerin stellar explorer da görüldüğü video
  
 <img width="1866" height="877" alt="image" src="https://github.com/user-attachments/assets/2e144f24-53d2-4a2b-beab-653e97cfeccd" />
 <img width="1862" height="881" alt="image" src="https://github.com/user-attachments/assets/58829d19-101c-4825-99d4-11fb6399f8ff" />
+<img width="1487" height="577" alt="image" src="https://github.com/user-attachments/assets/967a092e-66bf-4213-b2a5-3b3c0658561d" />
 
 
 
