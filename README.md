@@ -85,11 +85,12 @@ Uses Soroban Token Interface for transfers
 test 
 
 Durum: Başarılı (Success)
-<img width="1476" height="619" alt="Ekran görüntüsü 2026-04-18 171246" src="https://github.com/user-attachments/assets/5ff755f7-2768-4e5d-b5c9-3b6f07be1047" />
+<img width="1471" height="583" alt="image" src="https://github.com/user-attachments/assets/c151f056-f4e4-44d1-80fc-1df5ad5fa937" />
 📸 Test Aşaması Çıktısı:
-Yukarıdaki ekran görüntüsünde, akıllı sözleşmenin üç ana fonksiyonunun (Commit -> Reveal -> Balance) Standalone ağındaki başarılı çalışma döngüsü görülmektedir. İşlem hash değerleri (Transaction Hash) üzerinden ağdaki doğrulama teyit edilebilir.
-1. örnek: commit (mühürleme) işleminin hashi= 736ee086ed10d464151c4c180d56b14e7c3c6ef2303cfadc9e7199ebbdb67657
-2. Örnek: Kasa Açma İşleminin Hash'i(reveal)= b9f8158ee684699204ece902580addfde2918692322a8789f72e5740129559a1
+Yukarıdaki ekran görüntüsünde, İşlem hash değerleri (Transaction Hash) üzerinden ağdaki doğrulama teyit edilebilir.
+<img width="1857" height="840" alt="image" src="https://github.com/user-attachments/assets/35d5dd6c-7d5b-4f4f-b31f-27582c8aed58" />
+
+
 
 docker:
 <img width="1603" height="897" alt="image" src="https://github.com/user-attachments/assets/be125f85-2ecf-44d1-b391-e4ded84d320e" />
