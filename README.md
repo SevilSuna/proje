@@ -91,6 +91,8 @@ Yukarıdaki ekran görüntüsünde, akıllı sözleşmenin üç ana fonksiyonunu
 1. örnek: commit (mühürleme) işleminin hashi= 736ee086ed10d464151c4c180d56b14e7c3c6ef2303cfadc9e7199ebbdb67657
 2. Örnek: Kasa Açma İşleminin Hash'i(reveal)= b9f8158ee684699204ece902580addfde2918692322a8789f72e5740129559a1
 
+docker:
+<img width="1603" height="897" alt="image" src="https://github.com/user-attachments/assets/be125f85-2ecf-44d1-b391-e4ded84d320e" />
 
 
 
